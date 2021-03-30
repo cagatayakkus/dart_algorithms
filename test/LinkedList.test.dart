@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 
-import 'LinkedList.dart';
-import 'Node.dart';
+import '../bin/data_structures/LinkedList/LinkedList.dart';
+import '../bin/data_structures/LinkedList/Node.dart';
 
 void main() {
   group('Node Tests - ', () {

@@ -4,10 +4,7 @@ class LinkedList {
   Node? headNode;
   Node? tailNode;
 
-  LinkedList() {
-    headNode = null;
-    tailNode = null;
-  }
+  LinkedList();
 
   Node? get tail => tailNode;
   set tail(Node? tail) => tailNode = tail;

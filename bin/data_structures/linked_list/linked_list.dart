@@ -1,16 +1,10 @@
-import 'Node.dart';
+import 'node.dart';
 
 class LinkedList {
-  Node? headNode;
-  Node? tailNode;
+  Node? head;
+  Node? tail;
 
   LinkedList();
-
-  Node? get tail => tailNode;
-  set tail(Node? tail) => tailNode = tail;
-
-  Node? get head => headNode;
-  set head(Node? head) => headNode = head;
 
   int append(int value) {
     var newNode = Node(value);
@@ -97,7 +91,7 @@ class LinkedList {
 
   List? getList() {
     var elements = [];
-    var currentNode = headNode;
+    var currentNode = head;
     if (currentNode != null) {
       elements.add(currentNode.value);
       while (currentNode!.next != null) {

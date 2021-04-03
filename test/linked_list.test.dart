@@ -1,13 +1,13 @@
 import 'package:test/test.dart';
 
-import '../bin/data_structures/LinkedList/LinkedList.dart';
-import '../bin/data_structures/LinkedList/Node.dart';
+import '../bin/data_structures/linked_list/linked_list.dart';
+import '../bin/data_structures/linked_list/node.dart';
 
 void main() {
   group('Node Tests - ', () {
     test('Node should be created without next statement.', () {
       var node = Node(5);
-      expect(node.nextNode, equals(null));
+      expect(node.next, equals(null));
     });
 
     test('Node should be created with next statement.', () {

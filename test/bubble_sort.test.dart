@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../bin/algorithms/sorting_algorithms/BubbleSort/BubbleSort.dart';
+import '../bin/algorithms/sorting_algorithms/bubble_sort/bubble_sort.dart';
 
 void main() {
   test('Sorting ', () {

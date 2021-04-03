@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 
-import '../bin/data_structures/DoublyLinkedList/DoublyLinkedList.dart';
-import '../bin/data_structures/DoublyLinkedList/Node.dart';
+import '../bin/data_structures/doubly_linked_list/doubly_linked_list.dart';
+import '../bin/data_structures/doubly_linked_list/node.dart';
 
 void main() {
   group('Doubly Node Tests - ', () {

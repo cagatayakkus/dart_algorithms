@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../bin/algorithms/sorting_algorithms/SelectionSort/SelectionSort.dart';
+import '../bin/algorithms/sorting_algorithms/selection_sort/selection_sort.dart';
 
 void main() {
   test('Sorting', () {

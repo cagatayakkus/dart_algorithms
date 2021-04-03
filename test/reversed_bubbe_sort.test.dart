@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../bin/algorithms/sorting_algorithms/ReversedBubbleSort/ReversedBubbleSort.dart';
+import '../bin/algorithms/sorting_algorithms/reversed_bubble_sort/reversed_bubble_sort.dart';
 
 void main() {
   test('Sorting', () {

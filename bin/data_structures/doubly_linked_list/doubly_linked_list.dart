@@ -1,41 +1,35 @@
-import 'Node.dart';
+import 'node.dart';
 
 class DoublyLinkedList {
-  Node? headNode;
-  Node? tailNode;
+  Node? head;
+  Node? tail;
   DoublyLinkedList();
-
-  Node? get tail => tailNode;
-  Node? get head => headNode;
-
-  set head(Node? head) => headNode = head;
-  set tail(Node? tail) => tailNode = tail;
 
   int append(int value) {
     var newNode = Node(value);
-    if (headNode == null) {
-      headNode = newNode;
-      tailNode = newNode;
+    if (head == null) {
+      head = newNode;
+      tail = newNode;
       return newNode.value;
     }
-    newNode.previous = tailNode;
+    newNode.previous = tail;
     tail!.next = newNode;
-    tailNode = newNode;
+    tail = newNode;
     return newNode.value;
   }
 
   int prepend(int value) {
     var newNode = Node(value);
 
-    if (headNode == null) {
-      headNode = newNode;
-      tailNode = newNode;
+    if (head == null) {
+      head = newNode;
+      tail = newNode;
       return newNode.value;
     }
 
-    newNode.next = headNode;
-    headNode!.previous = newNode;
-    headNode = newNode;
+    newNode.next = head;
+    head!.previous = newNode;
+    head = newNode;
     return newNode.value;
   }
 
@@ -86,10 +80,10 @@ class DoublyLinkedList {
 
   int length() {
     var count = 0;
-    if (headNode == null) {
+    if (head == null) {
       return count;
     }
-    var currentNode = headNode;
+    var currentNode = head;
     count++;
     while (currentNode!.next != null) {
       currentNode = currentNode.next;

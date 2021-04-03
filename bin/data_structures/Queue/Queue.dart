@@ -1,50 +1,44 @@
-import 'Node.dart';
+import 'node.dart';
 
 class Queue {
-  Node? headNode;
-  Node? tailNode;
+  Node? head;
+  Node? tail;
 
   Queue();
 
-  Node? get head => headNode;
-  set head(Node? head) => headNode = head;
-
-  Node? get tail => tailNode;
-  set tail(Node? tail) => tailNode = tail;
-
   int? enqueue(value) {
     var newNode = Node(value);
-    if (headNode == null) {
-      headNode = newNode;
-      tailNode = newNode;
+    if (head == null) {
+      head = newNode;
+      tail = newNode;
       return newNode.value;
     }
-    tailNode!.next = newNode;
-    tailNode = newNode;
+    tail!.next = newNode;
+    tail = newNode;
     return newNode.value;
   }
 
   int? dequeue() {
-    if (headNode == null) {
+    if (head == null) {
       return null;
     }
-    if (headNode == tailNode) {
-      var returnValue = headNode!.value;
-      headNode = null;
-      tailNode = null;
+    if (head == tail) {
+      var returnValue = head!.value;
+      head = null;
+      tail = null;
       return returnValue;
     }
-    var returnValue = headNode!.value;
-    headNode = head!.next;
+    var returnValue = head!.value;
+    head = head!.next;
     return returnValue;
   }
 
   int length() {
     var count = 0;
-    if (headNode == null) {
+    if (head == null) {
       return count;
     }
-    var currentNode = headNode;
+    var currentNode = head;
     count++;
     while (currentNode!.next != null) {
       count++;

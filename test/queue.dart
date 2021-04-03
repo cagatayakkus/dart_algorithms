@@ -2,8 +2,8 @@ import 'dart:collection';
 
 import 'package:test/test.dart';
 
-import '../bin/data_structures/Queue/Queue.dart';
-import '../bin/data_structures/Queue/Node.dart';
+import '../bin/data_structures/queue/queue.dart';
+import '../bin/data_structures/queue/node.dart';
 
 void main() {
   group('Node Tests - ', () {

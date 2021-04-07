@@ -23,4 +23,4 @@ Test codes which are associated to the linked list is can be found in `test/link
 | Get | B.C. O(1) / W.C. O(n) |
 | Length | O(n) |
 
-PS: B.C. references best case, W.C. references worst case.
+PS: B.C. is a reference for best case, W.C. is a reference for worst case.

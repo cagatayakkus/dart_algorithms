@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 import 'package:test/test.dart';
 
 import '../bin/data_structures/linked_list/linked_list.dart';
@@ -33,7 +35,6 @@ void main() {
         expect(list.head, equals(null));
         expect(list.tail, equals(null));
         expect(list.length(), equals(0));
-        expect(list.getList(), equals(null));
       });
     });
     group('Node Addition - ', () {
@@ -48,7 +49,7 @@ void main() {
         expect(list.tail!.value, equals(7));
       });
 
-      test('New node could prepent to the list.', () {
+      test('New node could prepend to the list.', () {
         var list = LinkedList();
         list.append(3);
         expect(list.length(), equals(1));
@@ -59,6 +60,30 @@ void main() {
         list.prepend(9);
         expect(list.length(), equals(4));
         expect(list.head!.value, equals(9));
+      });
+
+      test('Get function must returns the value of given index', () {
+        var list = LinkedList();
+        list.append(3);
+        list.append(5);
+        list.append(7);
+        list.append(9);
+        expect(list.get(0), equals(3));
+        expect(list.get(1), equals(5));
+        expect(list.get(2), equals(7));
+        expect(list.get(3), equals(9));
+      });
+
+      test('Insert must add new node to the given index.', () {
+        var list = LinkedList();
+        list.append(3);
+        list.append(5);
+        list.append(7);
+        list.append(9);
+        list.insert(1, 4);
+        expect(list.length(), equals(5));
+        expect(list.get(1), equals(4));
+        expect(list.insert(20, 30), equals(null));
       });
     });
 

@@ -6,6 +6,7 @@ class LinkedList {
 
   LinkedList();
 
+  /// Appends a new node, which will be automatically created according to the given value, to the list.
   int append(int value) {
     var newNode = Node(value);
     if (head == null) {
@@ -21,6 +22,7 @@ class LinkedList {
     return newNode.value;
   }
 
+  /// Prepends a new node, which is automatically created according to the given value, to the list.
   int prepend(int value) {
     var newNode = Node(value);
     newNode.next = head;
@@ -31,6 +33,27 @@ class LinkedList {
     return newNode.value;
   }
 
+  /// Inserts new node to the given index.
+  ///
+  /// It takes the first element as index 0.
+  int? insert(int index, int value) {
+    if (length() <= index || head == null) {
+      return null;
+    }
+    var newNode = Node(value);
+    var currentNode = head;
+    for (var i = 1; i < index; i++) {
+      currentNode = currentNode!.next;
+    }
+    var temp = currentNode!.next;
+    currentNode.next = newNode;
+    newNode.next = temp;
+    return newNode.value;
+  }
+
+  /// Looks up if the list contains the given value.
+  ///
+  /// If exists returns true, if not returns false
   bool contains(value) {
     if (head == null) {
       return false;
@@ -45,6 +68,9 @@ class LinkedList {
     return true;
   }
 
+  /// Deletes the given value from list.
+  ///
+  /// It deletes when first met with the value.
   bool delete(value) {
     if (head == null) {
       return false;
@@ -75,6 +101,21 @@ class LinkedList {
     return false;
   }
 
+  /// Returns the value of the node of the given index.
+  ///
+  /// It takes the first element as index 0.
+  int? get(int index) {
+    if (length() <= index || head == null) {
+      return null;
+    }
+    var currentNode = head;
+    for (var i = 0; i < index; i++) {
+      currentNode = currentNode!.next;
+    }
+    return currentNode!.value;
+  }
+
+  /// Returns how many nodes are there in this list.
   int length() {
     var count = 0;
     if (head == null) {
@@ -87,20 +128,5 @@ class LinkedList {
       count++;
     }
     return count;
-  }
-
-  List? getList() {
-    var elements = [];
-    var currentNode = head;
-    if (currentNode != null) {
-      elements.add(currentNode.value);
-      while (currentNode!.next != null) {
-        currentNode = currentNode.next;
-        elements.add(currentNode!.value);
-      }
-      return elements;
-    } else {
-      return null;
-    }
   }
 }

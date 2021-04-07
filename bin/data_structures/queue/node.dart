@@ -1,5 +1,8 @@
 class Node {
   Node? next;
-  int value;
-  Node(this.value);
+  final int _value;
+
+  Node(this._value);
+
+  int get value => _value;
 }

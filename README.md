@@ -1,7 +1,5 @@
 # Data Structures and Algorithms using Dart
 
-This repo, which contains most-known data structures and algorithms, created to improve my knowledge on them. I do not claim that is a professional content.v# Data Structures and Algorithms using Dart
-
 This repo, which contains most-known data structures and algorithms, created to improve my knowledge on them. I do not claim that is a professional content.
 
 ## Contains

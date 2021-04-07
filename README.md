@@ -4,14 +4,14 @@ This repo, which contains most-known data structures and algorithms, created to 
 
 ## Contains
 
-Data Structures
+### *Data Structures*
 
 - [Linked List](https://github.com/cagatayakkus/dart_algorithms/tree/main/bin/data_structures/linked_list)
 - [Doubly Linked List](https://github.com/cagatayakkus/dart_algorithms/tree/main/bin/data_structures/doubly_linked_list)
 - [Stack](https://github.com/cagatayakkus/dart_algorithms/tree/main/bin/data_structures/stack)
 - [Queue](https://github.com/cagatayakkus/dart_algorithms/tree/main/bin/data_structures/queue)
 
-Algorithms
+### *Algorithms*
 
 - Sorting Algorithms
     - [Bubble Sort](https://github.com/cagatayakkus/dart_algorithms/tree/main/bin/algorithms/sorting_algorithms/bubble_sort)

@@ -10,7 +10,7 @@
 
 ## Test
 
-Test codes, which are associated to the linked list, are can be found in `test/linked_list.test.dart`
+Test codes, which associated to this data structure, are can be found in `test/linked_list.test.dart`
 
 ## Time Complexity Table
 

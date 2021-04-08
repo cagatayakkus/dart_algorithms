@@ -10,7 +10,7 @@
 
 ## Test
 
-Test codes, which are associated to this algorithm, are can be found in `test/merge_sort.test.dart`
+Test codes, which associated to this algorithm, are can be found in `test/merge_sort.test.dart`
 
 ## Time Complexity Table
 

@@ -6,7 +6,7 @@
 
 ## Visual Representation
 
-![Merge Sort Visual Representation](../../../assets/images/merge-sort.gif)
+![Merge Sort Visual Representation](../../../../assets/images/merge-sort.gif)
 
 ## Test
 
